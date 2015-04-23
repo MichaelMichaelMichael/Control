@@ -1,142 +1,142 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="83" inline="false" x="91" y="88">
+  <block type="controls_if" id="1" inline="false" x="91" y="88">
     <mutation elseif="1"></mutation>
     <value name="IF0">
-      <block type="sensor_button" id="84">
+      <block type="sensor_button" id="2">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO0">
-      <block type="variables_set" id="296" inline="true">
+      <block type="variables_set" id="3" inline="true">
         <field name="VAR">A</field>
         <value name="VALUE">
-          <block type="math_number" id="304">
+          <block type="math_number" id="4">
             <field name="NUM">1</field>
           </block>
         </value>
         <next>
-          <block type="controls_if" id="374" inline="false">
+          <block type="controls_if" id="5" inline="false">
             <value name="IF0">
-              <block type="logic_compare" id="400" inline="true">
+              <block type="logic_compare" id="6" inline="true">
                 <field name="OP">EQ</field>
                 <value name="A">
-                  <block type="variables_get" id="384">
+                  <block type="variables_get" id="7">
                     <field name="VAR">A</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_number" id="407">
+                  <block type="math_number" id="8">
                     <field name="NUM">0</field>
                   </block>
                 </value>
               </block>
             </value>
             <statement name="DO0">
-              <block type="controls_whileUntil" id="425" inline="false">
+              <block type="controls_whileUntil" id="9" inline="false">
                 <field name="MODE">UNTIL</field>
                 <value name="NUMBER">
-                  <block type="logic_compare" id="426" inline="true">
+                  <block type="logic_compare" id="10" inline="true">
                     <field name="OP">EQ</field>
                     <value name="A">
-                      <block type="variables_get" id="427">
+                      <block type="variables_get" id="11">
                         <field name="VAR">A</field>
                       </block>
                     </value>
                     <value name="B">
-                      <block type="math_number" id="428">
+                      <block type="math_number" id="12">
                         <field name="NUM">1</field>
                       </block>
                     </value>
                   </block>
                 </value>
                 <statement name="DO">
-                  <block type="controls_if" id="33" inline="false">
+                  <block type="controls_if" id="13" inline="false">
                     <mutation elseif="3"></mutation>
                     <value name="IF0">
-                      <block type="sensor_button" id="48">
+                      <block type="sensor_button" id="14">
                         <field name="OBJECT">UP</field>
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="controls_whileUntil" id="234" inline="false">
+                      <block type="controls_whileUntil" id="15" inline="false">
                         <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
-                          <block type="logic_negate" id="258" inline="true">
+                          <block type="logic_negate" id="16" inline="true">
                             <value name="NUMBER">
-                              <block type="sensor_button" id="260">
+                              <block type="sensor_button" id="17">
                                 <field name="OBJECT">UP</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="movement_forward" id="132"></block>
+                          <block type="movement_forward" id="18"></block>
                         </statement>
                       </block>
                     </statement>
                     <value name="IF1">
-                      <block type="sensor_button" id="68">
+                      <block type="sensor_button" id="19">
                         <field name="OBJECT">DOWN</field>
                       </block>
                     </value>
                     <statement name="DO1">
-                      <block type="controls_whileUntil" id="231" inline="false">
+                      <block type="controls_whileUntil" id="20" inline="false">
                         <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
-                          <block type="logic_negate" id="259" inline="true">
+                          <block type="logic_negate" id="21" inline="true">
                             <value name="NUMBER">
-                              <block type="sensor_button" id="263">
+                              <block type="sensor_button" id="22">
                                 <field name="OBJECT">DOWN</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="movement_reverse" id="142"></block>
+                          <block type="movement_reverse" id="23"></block>
                         </statement>
                       </block>
                     </statement>
                     <value name="IF2">
-                      <block type="sensor_button" id="69">
+                      <block type="sensor_button" id="24">
                         <field name="OBJECT">LEFT</field>
                       </block>
                     </value>
                     <statement name="DO2">
-                      <block type="controls_whileUntil" id="232" inline="false">
+                      <block type="controls_whileUntil" id="25" inline="false">
                         <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
-                          <block type="logic_negate" id="257" inline="true">
+                          <block type="logic_negate" id="26" inline="true">
                             <value name="NUMBER">
-                              <block type="sensor_button" id="264">
+                              <block type="sensor_button" id="27">
                                 <field name="OBJECT">LEFT</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="movement_left" id="152"></block>
+                          <block type="movement_left" id="28"></block>
                         </statement>
                       </block>
                     </statement>
                     <value name="IF3">
-                      <block type="sensor_button" id="70">
+                      <block type="sensor_button" id="29">
                         <field name="OBJECT">RIGHT</field>
                       </block>
                     </value>
                     <statement name="DO3">
-                      <block type="controls_whileUntil" id="233" inline="false">
+                      <block type="controls_whileUntil" id="30" inline="false">
                         <field name="MODE">UNTIL</field>
                         <value name="NUMBER">
-                          <block type="logic_negate" id="256" inline="true">
+                          <block type="logic_negate" id="31" inline="true">
                             <value name="NUMBER">
-                              <block type="sensor_button" id="265">
+                              <block type="sensor_button" id="32">
                                 <field name="OBJECT">RIGHT</field>
                               </block>
                             </value>
                           </block>
                         </value>
                         <statement name="DO">
-                          <block type="movement_right" id="163"></block>
+                          <block type="movement_right" id="33"></block>
                         </statement>
                       </block>
                     </statement>
@@ -149,22 +149,22 @@
       </block>
     </statement>
     <value name="IF1">
-      <block type="sensor_button" id="306">
+      <block type="sensor_button" id="34">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO1">
-      <block type="controls_if" id="363" inline="false">
+      <block type="controls_if" id="35" inline="false">
         <value name="IF0">
-          <block type="sensor_button" id="364">
+          <block type="sensor_button" id="36">
             <field name="OBJECT">ENTER</field>
           </block>
         </value>
         <statement name="DO0">
-          <block type="variables_set" id="297" inline="true">
+          <block type="variables_set" id="37" inline="true">
             <field name="VAR">A</field>
             <value name="VALUE">
-              <block type="math_number" id="305">
+              <block type="math_number" id="38">
                 <field name="NUM">0</field>
               </block>
             </value>
